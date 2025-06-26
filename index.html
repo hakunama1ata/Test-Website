@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GearUp | Empowering Mobility</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    body { background: #f9f9f9; color: #333; line-height: 1.6; }
+    header { background: #005F73; color: white; padding: 1.5rem 0; text-align: center; }
+    nav ul { list-style: none; display: flex; justify-content: center; gap: 2rem; margin-top: 1rem; }
+    nav ul li a { color: #ffffff; text-decoration: none; font-weight: bold; transition: color 0.3s; }
+    nav ul li a:hover { color: #FFD166; }
+    section { padding: 3rem 2rem; max-width: 900px; margin: auto; }
+    section h2 { color: #005F73; margin-bottom: 1rem; font-size: 1.75rem; }
+    form { background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem; }
+    input, textarea { padding: 0.75rem; border-radius: 4px; border: 1px solid #ccc; }
+    button { background: #FFD166; padding: 0.75rem; border: none; border-radius: 4px; font-weight: bold; cursor: pointer; }
+    button:hover { background: #ffc93c; }
+    footer { background: #003845; color: white; text-align: center; padding: 1rem 0; }
+    label { display: block; margin-top: 0.5rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="assets/banner.jpg" alt="GearUp Banner" style="width:100%; max-height:300px; object-fit:cover;"/>
+    <h1>GearUp | DriveChange</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#mission">Mission</a></li>
+        <li><a href="#vision">Vision</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About GearUp</h2>
+    <p><strong>GearUp</strong> is a grassroots initiative to provide essential vehicles like pickup trucks, mopeds, and bicycles to tradesmen, technicians, and aspiring entrepreneurs. This project empowers people by removing logistical barriers and helping them take control of their work lives.</p>
+  </section>
+
+  <section id="mission">
+    <h2>Our Mission</h2>
+    <p>To empower the working population with reliable transportation solutions. These vehicles help people reach job sites, deliver services, and build independence. We don't just donate vehicles—we deliver opportunity.</p>
+  </section>
+
+  <section id="vision">
+    <h2>Our Vision</h2>
+    <p>We envision a future where access to transportation is no longer a barrier to success. We foster self-reliance, dignity, and sustainable local development by equipping motivated individuals with the tools to thrive.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Submit your details if you wish to support, donate a vehicle, or get involved:</p>
+    <form action="https://formspree.io/f/mayvqnka" method="POST">
+      <input type="text" name="name" placeholder="Your Full Name" required />
+      <input type="email" name="email" placeholder="Your Email Address" required />
+      <input type="text" name="vehicle_type" placeholder="Vehicle Type (Pickup, Moped, Bike)" />
+      <textarea name="message" rows="5" placeholder="Your Message or Offer" required></textarea>
+      <label><input type="checkbox" name="consent" required> I agree to receive replies from the site owner.</label>
+      <input type="hidden" name="_next" value="https://hakunama1ata.github.io/GearupEu/thankyou.html">
+      <input type="text" name="_gotcha" style="display:none">
+      <input type="hidden" name="_autoresponse" value="Thank you for contacting GearUp. We’ve received your message and will respond shortly.">
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 GearUp Initiative. All rights reserved.</p>
+  </footer>
+</body>
+</html>
